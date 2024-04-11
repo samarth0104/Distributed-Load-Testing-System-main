@@ -1,8 +1,10 @@
-Big Data Project 2023 @ PES University - Distributed Load Testing System
-Goal
+# Big Data Project 2023 @ PES University - Distributed Load Testing System
+# Goal
 Design and build a distributed load-testing system that co-ordinates between
 multiple driver nodes to run a highly concurrent, high-throughput load test on a
 web server. This system will use Kafka as a communication service.
+# Architecture
+![Uploading ss.png…]()
 
 The orchestrator node and driver node are implemented as separate processes
 (you do not need to provision separate VMs for each)
