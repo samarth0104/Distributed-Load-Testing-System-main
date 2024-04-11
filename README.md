@@ -3,8 +3,6 @@
 Design and build a distributed load-testing system that co-ordinates between
 multiple driver nodes to run a highly concurrent, high-throughput load test on a
 web server. This system will use Kafka as a communication service.
-# Architecture
-![Uploading ss.png…]()
 
 The orchestrator node and driver node are implemented as separate processes
 (you do not need to provision separate VMs for each)
@@ -90,35 +88,6 @@ for your initial testing. This comes with both the /ping and /metrics
 endpoints baked in -
 https://github.com/anirudhRowjee/bd2023-load-testing-server
 
-Implementation Guidelines
-The preferred language of implementation is Golang as it is the industry's
-choice for building distributed systems. However, you are also free to use
-other languages such as Python, Java, C# and C++ to do the same. Marks will be
-awarded based on your implementation, thought process, architecture, and
-effort, not on the language.
-The concept of Heartbeat has been covered in the course.
-Feel free to use any available distributed system primitives (not full
-applications such as RabbitMQ) to further ease your development process.
-The JSON Message Format has been provided for your reference, and is intended
-to help you get started with implementation. You are free to modify it as you
-see fit, so long as it does not prevent you from implementing a part of the
-project properly.
-Weekly Guidelines
-Week 1 Target: Single Orchestrator, Two Drivers with
-
-Avalanche and Tsunami testing coverage
-Week 2 Target: Single Orchestrator, Two Drivers
-
-All features mentioned in the week 1 target
-metrics reporting
-Week 3 Target: Single Orchestrator with eight drivers
-
-All features mentioned in week 2 target
-Metrics dashboard and CLI or GUI Control interface
-A maximum of one second latency for dashboard / metrics update from the
-orchestrator node
-JSON Message and Topic Descriptor Format
-All Nodes must register themselves through the register topic
 
 // Register message format
 {
