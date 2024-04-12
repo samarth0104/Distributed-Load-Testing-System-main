@@ -1,4 +1,4 @@
-# Big Data Project 2023 @ PES University - Distributed Load Testing System
+# Distributed Load Testing System
 # Goal
 Design and build a distributed load-testing system that co-ordinates between
 multiple driver nodes to run a highly concurrent, high-throughput load test on a
