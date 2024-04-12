@@ -3,6 +3,8 @@
 Design and build a distributed load-testing system that co-ordinates between
 multiple driver nodes to run a highly concurrent, high-throughput load test on a
 web server. This system will use Kafka as a communication service.
+# Architecture
+![image](https://github.com/samarth0104/Distributed-Load-Testing-System-main/assets/144517774/e2c9ef28-033e-4722-97e8-08c1f1972bdc)
 
 The orchestrator node and driver node are implemented as separate processes
 (you do not need to provision separate VMs for each)
